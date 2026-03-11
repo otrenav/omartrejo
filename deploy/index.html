@@ -6,7 +6,7 @@
   <title>86 Mt Stencil</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Lora:ital@1&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after {
       margin: 0;
@@ -76,6 +76,24 @@
       animation: divider-in 0.6s ease forwards 0.5s;
     }
 
+    .sub-phrase {
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1.3rem;
+      color: rgba(255, 255, 255, 0.45);
+      letter-spacing: 0.02em;
+      margin-top: 0.8vw;
+      opacity: 0;
+      transform: translateY(-12px);
+      animation: fade-down 0.6s ease forwards 0.7s;
+    }
+
+    .sub-phrase + .sub-phrase {
+      margin-top: 0.3vw;
+      animation-delay: 0.8s;
+    }
+
     .link-wrap {
       margin-top: 2vw;
       opacity: 0;
@@ -127,6 +145,8 @@
   <div class="content">
     <span class="phrase">Intensity is my sanctuary</span>
     <div class="divider"></div>
+    <p class="sub-phrase">Sí quiero. Sí puedo. Y lo voy a lograr.</p>
+    <p class="sub-phrase">Al infinito y más allá.</p>
     <div class="link-wrap">
       <a href="https://mllabs.com" target="_blank" rel="noopener">mllabs.com &rarr;</a>
     </div>
